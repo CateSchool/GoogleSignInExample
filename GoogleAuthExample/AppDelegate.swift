@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Override point for customization after application launch.
         
         // Initialize Google sign-in (Note: use your own ID here)
-        GIDSignIn.sharedInstance().clientID = "YaDaDaa-YourIDHere.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().clientID = "YourGoogleOAuthID.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         
         return true
