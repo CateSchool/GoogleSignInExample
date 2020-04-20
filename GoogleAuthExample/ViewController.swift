@@ -16,16 +16,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Mark myself as the delegte
-        GIDSignIn.sharedInstance().presentingViewController = self
-        //GIDSignIn.sharedInstance().uiDelegate = self
-        
-        // To automatically sign in the user.
-        //GIDSignIn.sharedInstance().signInSilently()
-        
-        // TODO(developer) Configure the sign-in button look/feel
+         GIDSignIn.sharedInstance()?.presentingViewController = self
+
+        // Automatically sign in the user.
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         
     }
 
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+      withError error: NSError!) {
+        if (error == nil) {
+          // Perform any operations on signed in user here.
+          // ...
+        } else {
+          print("\(error.localizedDescription)")
+        }
+    }
+    
     @IBAction func signOutOfGoogle(_ sender: UIButton) {
         GIDSignIn.sharedInstance().signOut()
     }
