@@ -9,17 +9,18 @@
 import UIKit
 import GoogleSignIn
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         // Mark myself as the delegte
-        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().presentingViewController = self
+        //GIDSignIn.sharedInstance().uiDelegate = self
         
         // To automatically sign in the user.
-        GIDSignIn.sharedInstance().signInSilently()
+        //GIDSignIn.sharedInstance().signInSilently()
         
         // TODO(developer) Configure the sign-in button look/feel
         

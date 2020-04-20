@@ -164,22 +164,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7E0CF4AFC6D27DDDF4649A84 /* [CP] Copy Pods Resources */ = {
@@ -188,20 +181,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D070997CD11A7804D8BECEE0 /* [CP] Check Pods Manifest.lock */ = {
@@ -388,7 +376,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.YourInitials.GoogleAuthExample;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.JLM.GoogleAuthExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -407,7 +395,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.YourInitials.GoogleAuthExample;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.JLM.GoogleAuthExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
